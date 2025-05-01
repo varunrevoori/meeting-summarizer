@@ -1,0 +1,1777 @@
+2025-05-01 19:18:41,568 - ERROR - [streamlit_app:62] - backend/.env file not found.
+2025-05-01 19:21:12,202 - INFO - [streamlit_app:51] - .env file loaded.
+2025-05-01 19:21:12,202 - INFO - [streamlit_app:59] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:27:51,678 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:27:51,679 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:27:51,679 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:28:08,530 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:28:08,531 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:28:08,531 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:28:11,241 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:28:11,241 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:28:11,241 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:28:11,250 - INFO - [streamlit_app:142] - Starting new summary generation for: video.mp4
+2025-05-01 19:28:11,263 - INFO - [streamlit_app:149] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmp1shua3f9.mp4
+2025-05-01 19:28:11,266 - INFO - [streamlit_app:157] - Output directory for this run: st_outputs\video_20250501_192811
+2025-05-01 19:28:11,320 - INFO - [streamlit_app:173] - Calling generate_summary_from_video function...
+2025-05-01 19:28:11,321 - INFO - [meeting_processor:465] - Starting enhanced multimodal summarization for: C:\Users\varun\AppData\Local\Temp\tmp1shua3f9.mp4
+2025-05-01 19:28:11,321 - INFO - [meeting_processor:466] - Output directory: st_outputs\video_20250501_192811
+2025-05-01 19:28:11,616 - INFO - [meeting_processor:65] - Groq and Gemini APIs configured successfully.
+2025-05-01 19:28:11,616 - INFO - [meeting_processor:73] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmp1shua3f9.mp4' to 'st_outputs\video_20250501_192811\temp_meeting_audio.mp3'...
+2025-05-01 19:28:17,947 - INFO - [meeting_processor:82] - Audio extraction successful.
+2025-05-01 19:28:17,947 - INFO - [meeting_processor:93] - Transcribing audio file: st_outputs\video_20250501_192811\temp_meeting_audio.mp3 using Groq/Whisper...
+2025-05-01 19:28:19,701 - INFO - [meeting_processor:100] - Audio duration: 605.90 seconds
+2025-05-01 19:28:19,730 - INFO - [meeting_processor:103] - Split audio into 2 chunks of approximately 10 minutes.
+2025-05-01 19:28:19,730 - INFO - [meeting_processor:111] - Processing chunk 1/2...
+2025-05-01 19:28:28,730 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:28:28,731 - INFO - [meeting_processor:129] - Successfully transcribed chunk 1.
+2025-05-01 19:28:28,767 - INFO - [meeting_processor:111] - Processing chunk 2/2...
+2025-05-01 19:28:29,371 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:28:29,372 - INFO - [meeting_processor:129] - Successfully transcribed chunk 2.
+2025-05-01 19:28:29,402 - INFO - [meeting_processor:153] - Finished processing all audio chunks.
+2025-05-01 19:28:29,462 - INFO - [meeting_processor:485] - Removed temporary audio file: st_outputs\video_20250501_192811\temp_meeting_audio.mp3
+2025-05-01 19:28:29,462 - INFO - [meeting_processor:163] - Extracting frames for initial scan from 'C:\Users\varun\AppData\Local\Temp\tmp1shua3f9.mp4' every 10 seconds...
+2025-05-01 19:28:32,240 - INFO - [meeting_processor:188] - Extracted 61 frames for initial scan.
+2025-05-01 19:28:32,240 - INFO - [meeting_processor:198] - Analyzing 61 initially scanned frames...
+2025-05-01 19:28:35,801 - INFO - [meeting_processor:227] - Significant visual content found in frame at 0ms.
+2025-05-01 19:28:38,303 - INFO - [meeting_processor:227] - Significant visual content found in frame at 10000ms.
+2025-05-01 19:28:40,671 - INFO - [meeting_processor:227] - Significant visual content found in frame at 20000ms.
+2025-05-01 19:28:43,515 - INFO - [meeting_processor:227] - Significant visual content found in frame at 30000ms.
+2025-05-01 19:28:46,003 - INFO - [meeting_processor:227] - Significant visual content found in frame at 40000ms.
+2025-05-01 19:28:48,615 - INFO - [meeting_processor:227] - Significant visual content found in frame at 50000ms.
+2025-05-01 19:28:50,897 - INFO - [meeting_processor:227] - Significant visual content found in frame at 60000ms.
+2025-05-01 19:28:53,341 - INFO - [meeting_processor:227] - Significant visual content found in frame at 70000ms.
+2025-05-01 19:28:55,631 - INFO - [meeting_processor:227] - Significant visual content found in frame at 80000ms.
+2025-05-01 19:28:57,982 - INFO - [meeting_processor:227] - Significant visual content found in frame at 90000ms.
+2025-05-01 19:29:00,099 - INFO - [meeting_processor:227] - Significant visual content found in frame at 100000ms.
+2025-05-01 19:29:02,398 - INFO - [meeting_processor:227] - Significant visual content found in frame at 110000ms.
+2025-05-01 19:29:04,490 - INFO - [meeting_processor:227] - Significant visual content found in frame at 120000ms.
+2025-05-01 19:29:06,706 - INFO - [meeting_processor:227] - Significant visual content found in frame at 130000ms.
+2025-05-01 19:29:09,166 - INFO - [meeting_processor:227] - Significant visual content found in frame at 140000ms.
+2025-05-01 19:29:11,637 - INFO - [meeting_processor:227] - Significant visual content found in frame at 150000ms.
+2025-05-01 19:29:13,789 - INFO - [meeting_processor:227] - Significant visual content found in frame at 160000ms.
+2025-05-01 19:29:15,042 - WARNING - [meeting_processor:235] - Error analyzing frame 170000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-05-01 19:29:20,730 - WARNING - [meeting_processor:235] - Error analyzing frame 170000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-05-01 19:29:26,407 - WARNING - [meeting_processor:235] - Error analyzing frame 170000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-05-01 19:29:26,407 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 170000ms.
+2025-05-01 19:29:27,604 - WARNING - [meeting_processor:235] - Error analyzing frame 180000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-05-01 19:29:33,280 - WARNING - [meeting_processor:235] - Error analyzing frame 180000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2025-05-01 19:29:40,213 - INFO - [meeting_processor:227] - Significant visual content found in frame at 180000ms.
+2025-05-01 19:29:42,498 - INFO - [meeting_processor:227] - Significant visual content found in frame at 190000ms.
+2025-05-01 19:29:44,874 - INFO - [meeting_processor:227] - Significant visual content found in frame at 200000ms.
+2025-05-01 19:29:47,034 - INFO - [meeting_processor:227] - Significant visual content found in frame at 210000ms.
+2025-05-01 19:29:48,974 - INFO - [meeting_processor:227] - Significant visual content found in frame at 220000ms.
+2025-05-01 19:29:51,386 - INFO - [meeting_processor:227] - Significant visual content found in frame at 230000ms.
+2025-05-01 19:29:53,860 - INFO - [meeting_processor:227] - Significant visual content found in frame at 240000ms.
+2025-05-01 19:29:56,269 - INFO - [meeting_processor:227] - Significant visual content found in frame at 250000ms.
+2025-05-01 19:29:58,555 - INFO - [meeting_processor:227] - Significant visual content found in frame at 260000ms.
+2025-05-01 19:30:00,945 - INFO - [meeting_processor:227] - Significant visual content found in frame at 270000ms.
+2025-05-01 19:30:03,182 - INFO - [meeting_processor:227] - Significant visual content found in frame at 280000ms.
+2025-05-01 19:30:05,370 - INFO - [meeting_processor:227] - Significant visual content found in frame at 290000ms.
+2025-05-01 19:30:07,974 - INFO - [meeting_processor:227] - Significant visual content found in frame at 300000ms.
+2025-05-01 19:30:10,447 - INFO - [meeting_processor:227] - Significant visual content found in frame at 310000ms.
+2025-05-01 19:30:12,764 - INFO - [meeting_processor:227] - Significant visual content found in frame at 320000ms.
+2025-05-01 19:30:15,007 - INFO - [meeting_processor:227] - Significant visual content found in frame at 330000ms.
+2025-05-01 19:30:16,174 - WARNING - [meeting_processor:235] - Error analyzing frame 340000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-05-01 19:30:22,837 - INFO - [meeting_processor:227] - Significant visual content found in frame at 340000ms.
+2025-05-01 19:30:23,989 - WARNING - [meeting_processor:235] - Error analyzing frame 350000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-05-01 19:30:29,630 - WARNING - [meeting_processor:235] - Error analyzing frame 350000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-01 19:30:36,605 - INFO - [meeting_processor:227] - Significant visual content found in frame at 350000ms.
+2025-05-01 19:30:38,655 - INFO - [meeting_processor:227] - Significant visual content found in frame at 360000ms.
+2025-05-01 19:30:41,052 - INFO - [meeting_processor:227] - Significant visual content found in frame at 370000ms.
+2025-05-01 19:30:43,047 - INFO - [meeting_processor:227] - Significant visual content found in frame at 380000ms.
+2025-05-01 19:30:45,389 - INFO - [meeting_processor:227] - Significant visual content found in frame at 390000ms.
+2025-05-01 19:30:48,124 - INFO - [meeting_processor:227] - Significant visual content found in frame at 400000ms.
+2025-05-01 19:30:50,728 - INFO - [meeting_processor:227] - Significant visual content found in frame at 410000ms.
+2025-05-01 19:30:53,183 - INFO - [meeting_processor:227] - Significant visual content found in frame at 420000ms.
+2025-05-01 19:30:55,605 - INFO - [meeting_processor:227] - Significant visual content found in frame at 430000ms.
+2025-05-01 19:30:57,889 - INFO - [meeting_processor:227] - Significant visual content found in frame at 440000ms.
+2025-05-01 19:30:59,917 - INFO - [meeting_processor:227] - Significant visual content found in frame at 450000ms.
+2025-05-01 19:31:02,012 - INFO - [meeting_processor:227] - Significant visual content found in frame at 460000ms.
+2025-05-01 19:31:04,399 - INFO - [meeting_processor:227] - Significant visual content found in frame at 470000ms.
+2025-05-01 19:31:07,071 - INFO - [meeting_processor:227] - Significant visual content found in frame at 480000ms.
+2025-05-01 19:31:09,531 - INFO - [meeting_processor:227] - Significant visual content found in frame at 490000ms.
+2025-05-01 19:31:11,578 - INFO - [meeting_processor:227] - Significant visual content found in frame at 500000ms.
+2025-05-01 19:31:11,716 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:31:11,718 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:31:11,718 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:31:11,732 - INFO - [streamlit_app:142] - Starting new summary generation for: video.mp4
+2025-05-01 19:31:11,737 - INFO - [streamlit_app:149] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmp9erwiana.mp4
+2025-05-01 19:31:11,740 - INFO - [streamlit_app:157] - Output directory for this run: st_outputs\video_20250501_193111
+2025-05-01 19:31:11,794 - INFO - [streamlit_app:173] - Calling generate_summary_from_video function...
+2025-05-01 19:31:11,795 - INFO - [meeting_processor:465] - Starting enhanced multimodal summarization for: C:\Users\varun\AppData\Local\Temp\tmp9erwiana.mp4
+2025-05-01 19:31:11,795 - INFO - [meeting_processor:466] - Output directory: st_outputs\video_20250501_193111
+2025-05-01 19:31:12,027 - INFO - [meeting_processor:65] - Groq and Gemini APIs configured successfully.
+2025-05-01 19:31:12,027 - INFO - [meeting_processor:73] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmp9erwiana.mp4' to 'st_outputs\video_20250501_193111\temp_meeting_audio.mp3'...
+2025-05-01 19:31:13,676 - INFO - [meeting_processor:227] - Significant visual content found in frame at 510000ms.
+2025-05-01 19:31:14,815 - WARNING - [meeting_processor:235] - Error analyzing frame 520000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-05-01 19:31:17,397 - INFO - [meeting_processor:82] - Audio extraction successful.
+2025-05-01 19:31:17,398 - INFO - [meeting_processor:93] - Transcribing audio file: st_outputs\video_20250501_193111\temp_meeting_audio.mp3 using Groq/Whisper...
+2025-05-01 19:31:19,055 - INFO - [meeting_processor:100] - Audio duration: 605.90 seconds
+2025-05-01 19:31:19,096 - INFO - [meeting_processor:103] - Split audio into 2 chunks of approximately 10 minutes.
+2025-05-01 19:31:19,096 - INFO - [meeting_processor:111] - Processing chunk 1/2...
+2025-05-01 19:31:20,467 - WARNING - [meeting_processor:235] - Error analyzing frame 520000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-05-01 19:31:26,309 - WARNING - [meeting_processor:235] - Error analyzing frame 520000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-05-01 19:31:26,309 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 520000ms.
+2025-05-01 19:31:28,263 - INFO - [meeting_processor:227] - Significant visual content found in frame at 530000ms.
+2025-05-01 19:31:28,787 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:31:28,788 - INFO - [meeting_processor:129] - Successfully transcribed chunk 1.
+2025-05-01 19:31:28,837 - INFO - [meeting_processor:111] - Processing chunk 2/2...
+2025-05-01 19:31:29,131 - WARNING - [meeting_processor:235] - Error analyzing frame 540000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-01 19:31:29,424 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:31:29,425 - INFO - [meeting_processor:129] - Successfully transcribed chunk 2.
+2025-05-01 19:31:29,458 - INFO - [meeting_processor:153] - Finished processing all audio chunks.
+2025-05-01 19:31:29,519 - INFO - [meeting_processor:485] - Removed temporary audio file: st_outputs\video_20250501_193111\temp_meeting_audio.mp3
+2025-05-01 19:31:29,520 - INFO - [meeting_processor:163] - Extracting frames for initial scan from 'C:\Users\varun\AppData\Local\Temp\tmp9erwiana.mp4' every 10 seconds...
+2025-05-01 19:31:32,859 - INFO - [meeting_processor:188] - Extracted 61 frames for initial scan.
+2025-05-01 19:31:32,859 - INFO - [meeting_processor:198] - Analyzing 61 initially scanned frames...
+2025-05-01 19:31:35,570 - INFO - [meeting_processor:227] - Significant visual content found in frame at 540000ms.
+2025-05-01 19:31:36,089 - INFO - [meeting_processor:227] - Significant visual content found in frame at 0ms.
+2025-05-01 19:31:37,479 - INFO - [meeting_processor:227] - Significant visual content found in frame at 550000ms.
+2025-05-01 19:31:38,421 - INFO - [meeting_processor:227] - Significant visual content found in frame at 10000ms.
+2025-05-01 19:31:39,098 - INFO - [meeting_processor:227] - Significant visual content found in frame at 560000ms.
+2025-05-01 19:31:40,718 - INFO - [meeting_processor:227] - Significant visual content found in frame at 20000ms.
+2025-05-01 19:31:40,826 - INFO - [meeting_processor:227] - Significant visual content found in frame at 570000ms.
+2025-05-01 19:31:42,905 - INFO - [meeting_processor:227] - Significant visual content found in frame at 30000ms.
+2025-05-01 19:31:42,912 - INFO - [meeting_processor:227] - Significant visual content found in frame at 580000ms.
+2025-05-01 19:31:44,840 - INFO - [meeting_processor:227] - Significant visual content found in frame at 590000ms.
+2025-05-01 19:31:45,024 - INFO - [meeting_processor:227] - Significant visual content found in frame at 40000ms.
+2025-05-01 19:31:46,446 - INFO - [meeting_processor:227] - Significant visual content found in frame at 600000ms.
+2025-05-01 19:31:46,948 - INFO - [meeting_processor:247] - Finished initial frame analysis.
+2025-05-01 19:31:46,948 - INFO - [meeting_processor:253] - Generating initial summary and requesting image placeholders...
+2025-05-01 19:31:47,155 - INFO - [meeting_processor:227] - Significant visual content found in frame at 50000ms.
+2025-05-01 19:31:49,631 - INFO - [meeting_processor:227] - Significant visual content found in frame at 60000ms.
+2025-05-01 19:31:51,581 - INFO - [meeting_processor:227] - Significant visual content found in frame at 70000ms.
+2025-05-01 19:31:52,198 - INFO - [meeting_processor:302] - Initial summary generation with placeholders successful.
+2025-05-01 19:31:52,198 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_300@@ requesting frame at 300000ms
+2025-05-01 19:31:52,198 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_50@@ requesting frame at 50000ms
+2025-05-01 19:31:52,198 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_530@@ requesting frame at 530000ms
+2025-05-01 19:31:52,200 - INFO - [meeting_processor:351] - Attempting to extract 3 specific frames into 'st_outputs\video_20250501_192811\important_frames'...
+2025-05-01 19:31:52,295 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 50000ms to st_outputs\video_20250501_192811\important_frames\frame_at_50000ms.jpg
+2025-05-01 19:31:52,353 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 300000ms to st_outputs\video_20250501_192811\important_frames\frame_at_300000ms.jpg
+2025-05-01 19:31:52,405 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 530000ms to st_outputs\video_20250501_192811\important_frames\frame_at_530000ms.jpg
+2025-05-01 19:31:52,419 - INFO - [meeting_processor:388] - Finished specific frame extraction. Successfully extracted 3/3 requested frames.
+2025-05-01 19:31:52,419 - INFO - [meeting_processor:395] - Encoding 3 extracted frames to Base64...
+2025-05-01 19:31:52,421 - INFO - [meeting_processor:408] - Finished encoding frames. 3 frames encoded.
+2025-05-01 19:31:52,421 - INFO - [meeting_processor:414] - Replacing placeholders with embedded images in the final summary...
+2025-05-01 19:31:52,427 - INFO - [meeting_processor:441] - Placeholder replacement complete. Embedded: 3, Missed: 0.
+2025-05-01 19:31:52,427 - INFO - [meeting_processor:529] - Saving final summary with embedded images to: st_outputs\video_20250501_192811\tmp1shua3f9_summary_with_images.md
+2025-05-01 19:31:52,429 - INFO - [meeting_processor:533] - Final summary saved successfully.
+2025-05-01 19:31:52,429 - INFO - [streamlit_app:185] - Backend processing successful. Summary file: st_outputs\video_20250501_192811\tmp1shua3f9_summary_with_images.md
+2025-05-01 19:31:52,486 - INFO - [streamlit_app:209] - Removed temporary video file: C:\Users\varun\AppData\Local\Temp\tmp1shua3f9.mp4
+2025-05-01 19:31:52,951 - WARNING - [meeting_processor:235] - Error analyzing frame 80000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 6
+}
+]
+2025-05-01 19:31:58,649 - WARNING - [meeting_processor:235] - Error analyzing frame 80000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-05-01 19:32:04,352 - WARNING - [meeting_processor:235] - Error analyzing frame 80000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 55
+}
+]
+2025-05-01 19:32:04,352 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 80000ms.
+2025-05-01 19:32:05,535 - WARNING - [meeting_processor:235] - Error analyzing frame 90000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-05-01 19:32:11,205 - WARNING - [meeting_processor:235] - Error analyzing frame 90000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-05-01 19:32:16,934 - WARNING - [meeting_processor:235] - Error analyzing frame 90000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2025-05-01 19:32:16,934 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 90000ms.
+2025-05-01 19:32:18,142 - WARNING - [meeting_processor:235] - Error analyzing frame 100000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-05-01 19:32:23,866 - WARNING - [meeting_processor:235] - Error analyzing frame 100000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-05-01 19:32:29,545 - WARNING - [meeting_processor:235] - Error analyzing frame 100000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-01 19:32:29,545 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 100000ms.
+2025-05-01 19:32:30,723 - WARNING - [meeting_processor:235] - Error analyzing frame 110000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 29
+}
+]
+2025-05-01 19:32:37,142 - INFO - [meeting_processor:227] - Significant visual content found in frame at 110000ms.
+2025-05-01 19:32:39,094 - INFO - [meeting_processor:227] - Significant visual content found in frame at 120000ms.
+2025-05-01 19:32:41,030 - INFO - [meeting_processor:227] - Significant visual content found in frame at 130000ms.
+2025-05-01 19:32:43,008 - INFO - [meeting_processor:227] - Significant visual content found in frame at 140000ms.
+2025-05-01 19:32:44,779 - INFO - [meeting_processor:227] - Significant visual content found in frame at 150000ms.
+2025-05-01 19:32:46,657 - INFO - [meeting_processor:227] - Significant visual content found in frame at 160000ms.
+2025-05-01 19:32:49,019 - INFO - [meeting_processor:227] - Significant visual content found in frame at 170000ms.
+2025-05-01 19:32:51,120 - INFO - [meeting_processor:227] - Significant visual content found in frame at 180000ms.
+2025-05-01 19:32:53,270 - INFO - [meeting_processor:227] - Significant visual content found in frame at 190000ms.
+2025-05-01 19:32:55,168 - INFO - [meeting_processor:227] - Significant visual content found in frame at 200000ms.
+2025-05-01 19:32:57,233 - INFO - [meeting_processor:227] - Significant visual content found in frame at 210000ms.
+2025-05-01 19:32:59,316 - INFO - [meeting_processor:227] - Significant visual content found in frame at 220000ms.
+2025-05-01 19:33:01,278 - INFO - [meeting_processor:227] - Significant visual content found in frame at 230000ms.
+2025-05-01 19:33:03,621 - INFO - [meeting_processor:227] - Significant visual content found in frame at 240000ms.
+2025-05-01 19:33:05,862 - INFO - [meeting_processor:227] - Significant visual content found in frame at 250000ms.
+2025-05-01 19:33:08,111 - INFO - [meeting_processor:227] - Significant visual content found in frame at 260000ms.
+2025-05-01 19:33:10,233 - INFO - [meeting_processor:227] - Significant visual content found in frame at 270000ms.
+2025-05-01 19:33:11,395 - WARNING - [meeting_processor:235] - Error analyzing frame 280000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-05-01 19:33:17,076 - WARNING - [meeting_processor:235] - Error analyzing frame 280000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2025-05-01 19:33:22,755 - WARNING - [meeting_processor:235] - Error analyzing frame 280000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-05-01 19:33:22,755 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 280000ms.
+2025-05-01 19:33:23,923 - WARNING - [meeting_processor:235] - Error analyzing frame 290000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-05-01 19:33:29,562 - WARNING - [meeting_processor:235] - Error analyzing frame 290000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-01 19:33:36,154 - INFO - [meeting_processor:227] - Significant visual content found in frame at 290000ms.
+2025-05-01 19:33:38,324 - INFO - [meeting_processor:227] - Significant visual content found in frame at 300000ms.
+2025-05-01 19:33:40,863 - INFO - [meeting_processor:227] - Significant visual content found in frame at 310000ms.
+2025-05-01 19:33:42,960 - INFO - [meeting_processor:227] - Significant visual content found in frame at 320000ms.
+2025-05-01 19:33:45,102 - INFO - [meeting_processor:227] - Significant visual content found in frame at 330000ms.
+2025-05-01 19:33:47,092 - INFO - [meeting_processor:227] - Significant visual content found in frame at 340000ms.
+2025-05-01 19:33:49,137 - INFO - [meeting_processor:227] - Significant visual content found in frame at 350000ms.
+2025-05-01 19:33:51,239 - INFO - [meeting_processor:227] - Significant visual content found in frame at 360000ms.
+2025-05-01 19:33:53,399 - INFO - [meeting_processor:227] - Significant visual content found in frame at 370000ms.
+2025-05-01 19:33:55,359 - INFO - [meeting_processor:227] - Significant visual content found in frame at 380000ms.
+2025-05-01 19:33:57,310 - INFO - [meeting_processor:227] - Significant visual content found in frame at 390000ms.
+2025-05-01 19:33:59,590 - INFO - [meeting_processor:227] - Significant visual content found in frame at 400000ms.
+2025-05-01 19:34:02,245 - INFO - [meeting_processor:227] - Significant visual content found in frame at 410000ms.
+2025-05-01 19:34:04,380 - INFO - [meeting_processor:227] - Significant visual content found in frame at 420000ms.
+2025-05-01 19:34:06,566 - INFO - [meeting_processor:227] - Significant visual content found in frame at 430000ms.
+2025-05-01 19:34:08,600 - INFO - [meeting_processor:227] - Significant visual content found in frame at 440000ms.
+2025-05-01 19:34:10,366 - INFO - [meeting_processor:227] - Significant visual content found in frame at 450000ms.
+2025-05-01 19:34:11,551 - WARNING - [meeting_processor:235] - Error analyzing frame 460000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 48
+}
+]
+2025-05-01 19:34:17,208 - WARNING - [meeting_processor:235] - Error analyzing frame 460000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 42
+}
+]
+2025-05-01 19:34:22,847 - WARNING - [meeting_processor:235] - Error analyzing frame 460000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 36
+}
+]
+2025-05-01 19:34:22,847 - ERROR - [meeting_processor:237] - Frame analysis failed permanently for 460000ms.
+2025-05-01 19:34:23,816 - WARNING - [meeting_processor:235] - Error analyzing frame 470000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2025-05-01 19:34:29,261 - WARNING - [meeting_processor:235] - Error analyzing frame 470000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 30
+}
+]
+2025-05-01 19:34:35,994 - INFO - [meeting_processor:227] - Significant visual content found in frame at 470000ms.
+2025-05-01 19:34:38,261 - INFO - [meeting_processor:227] - Significant visual content found in frame at 480000ms.
+2025-05-01 19:34:40,543 - INFO - [meeting_processor:227] - Significant visual content found in frame at 490000ms.
+2025-05-01 19:34:42,644 - INFO - [meeting_processor:227] - Significant visual content found in frame at 500000ms.
+2025-05-01 19:34:44,572 - INFO - [meeting_processor:227] - Significant visual content found in frame at 510000ms.
+2025-05-01 19:34:46,935 - INFO - [meeting_processor:227] - Significant visual content found in frame at 520000ms.
+2025-05-01 19:34:48,555 - INFO - [meeting_processor:227] - Significant visual content found in frame at 530000ms.
+2025-05-01 19:34:50,214 - INFO - [meeting_processor:227] - Significant visual content found in frame at 540000ms.
+2025-05-01 19:34:51,942 - INFO - [meeting_processor:227] - Significant visual content found in frame at 550000ms.
+2025-05-01 19:34:53,547 - INFO - [meeting_processor:227] - Significant visual content found in frame at 560000ms.
+2025-05-01 19:34:55,250 - INFO - [meeting_processor:227] - Significant visual content found in frame at 570000ms.
+2025-05-01 19:34:56,812 - INFO - [meeting_processor:227] - Significant visual content found in frame at 580000ms.
+2025-05-01 19:34:58,550 - INFO - [meeting_processor:227] - Significant visual content found in frame at 590000ms.
+2025-05-01 19:34:59,940 - INFO - [meeting_processor:227] - Significant visual content found in frame at 600000ms.
+2025-05-01 19:35:00,441 - INFO - [meeting_processor:247] - Finished initial frame analysis.
+2025-05-01 19:35:00,441 - INFO - [meeting_processor:253] - Generating initial summary and requesting image placeholders...
+2025-05-01 19:35:06,590 - INFO - [meeting_processor:302] - Initial summary generation with placeholders successful.
+2025-05-01 19:35:06,590 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_10@@ requesting frame at 10000ms
+2025-05-01 19:35:06,590 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_50@@ requesting frame at 50000ms
+2025-05-01 19:35:06,590 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_300@@ requesting frame at 300000ms
+2025-05-01 19:35:06,590 - INFO - [meeting_processor:328] - Found placeholder: @@IMG_530@@ requesting frame at 530000ms
+2025-05-01 19:35:06,592 - INFO - [meeting_processor:351] - Attempting to extract 4 specific frames into 'st_outputs\video_20250501_193111\important_frames'...
+2025-05-01 19:35:06,671 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 10000ms to st_outputs\video_20250501_193111\important_frames\frame_at_10000ms.jpg
+2025-05-01 19:35:06,728 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 50000ms to st_outputs\video_20250501_193111\important_frames\frame_at_50000ms.jpg
+2025-05-01 19:35:06,782 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 300000ms to st_outputs\video_20250501_193111\important_frames\frame_at_300000ms.jpg
+2025-05-01 19:35:06,829 - INFO - [meeting_processor:378] - Successfully extracted frame for timestamp 530000ms to st_outputs\video_20250501_193111\important_frames\frame_at_530000ms.jpg
+2025-05-01 19:35:06,843 - INFO - [meeting_processor:388] - Finished specific frame extraction. Successfully extracted 4/4 requested frames.
+2025-05-01 19:35:06,843 - INFO - [meeting_processor:395] - Encoding 4 extracted frames to Base64...
+2025-05-01 19:35:06,846 - INFO - [meeting_processor:408] - Finished encoding frames. 4 frames encoded.
+2025-05-01 19:35:06,846 - INFO - [meeting_processor:414] - Replacing placeholders with embedded images in the final summary...
+2025-05-01 19:35:06,847 - INFO - [meeting_processor:441] - Placeholder replacement complete. Embedded: 4, Missed: 0.
+2025-05-01 19:35:06,848 - INFO - [meeting_processor:529] - Saving final summary with embedded images to: st_outputs\video_20250501_193111\tmp9erwiana_summary_with_images.md
+2025-05-01 19:35:06,850 - INFO - [meeting_processor:533] - Final summary saved successfully.
+2025-05-01 19:35:06,851 - INFO - [streamlit_app:185] - Backend processing successful. Summary file: st_outputs\video_20250501_193111\tmp9erwiana_summary_with_images.md
+2025-05-01 19:35:06,909 - INFO - [streamlit_app:209] - Removed temporary video file: C:\Users\varun\AppData\Local\Temp\tmp9erwiana.mp4
+2025-05-01 19:43:59,477 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:43:59,478 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:43:59,478 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:44:07,483 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:44:07,484 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:44:07,485 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:44:09,546 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:44:09,547 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:44:09,547 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:44:09,558 - INFO - [streamlit_app:142] - Starting new summary generation for: video.mp4
+2025-05-01 19:44:09,567 - INFO - [streamlit_app:149] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmpe5wasq77.mp4
+2025-05-01 19:44:09,569 - INFO - [streamlit_app:157] - Output directory for this run: st_outputs\video_20250501_194409
+2025-05-01 19:44:09,621 - INFO - [streamlit_app:173] - Calling generate_summary_from_video function...
+2025-05-01 19:44:09,623 - INFO - [meeting_processor:477] - Starting enhanced multimodal summarization for: C:\Users\varun\AppData\Local\Temp\tmpe5wasq77.mp4
+2025-05-01 19:44:09,623 - INFO - [meeting_processor:478] - Output directory: st_outputs\video_20250501_194409
+2025-05-01 19:44:10,381 - INFO - [meeting_processor:65] - Groq and Gemini APIs configured successfully.
+2025-05-01 19:44:10,381 - INFO - [meeting_processor:73] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmpe5wasq77.mp4' to 'st_outputs\video_20250501_194409\temp_meeting_audio.mp3'...
+2025-05-01 19:44:15,209 - INFO - [meeting_processor:82] - Audio extraction successful.
+2025-05-01 19:44:15,209 - INFO - [meeting_processor:93] - Transcribing audio file: st_outputs\video_20250501_194409\temp_meeting_audio.mp3 using Groq/Whisper...
+2025-05-01 19:44:16,825 - INFO - [meeting_processor:100] - Audio duration: 605.90 seconds
+2025-05-01 19:44:16,847 - INFO - [meeting_processor:103] - Split audio into 2 chunks of approximately 10 minutes.
+2025-05-01 19:44:16,847 - INFO - [meeting_processor:111] - Processing chunk 1/2...
+2025-05-01 19:44:24,645 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:44:24,646 - INFO - [meeting_processor:129] - Successfully transcribed chunk 1.
+2025-05-01 19:44:24,683 - INFO - [meeting_processor:111] - Processing chunk 2/2...
+2025-05-01 19:44:25,249 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:44:25,249 - INFO - [meeting_processor:129] - Successfully transcribed chunk 2.
+2025-05-01 19:44:25,283 - INFO - [meeting_processor:153] - Finished processing all audio chunks.
+2025-05-01 19:44:25,339 - INFO - [meeting_processor:163] - Extracting frames for initial scan from 'C:\Users\varun\AppData\Local\Temp\tmpe5wasq77.mp4' every 10 seconds...
+2025-05-01 19:44:28,284 - INFO - [meeting_processor:188] - Extracted 61 frames for initial scan.
+2025-05-01 19:44:28,284 - INFO - [meeting_processor:198] - Analyzing 61 initially scanned frames...
+2025-05-01 19:44:30,185 - INFO - [meeting_processor:227] - Significant visual content found in frame at 0ms.
+2025-05-01 19:44:32,340 - INFO - [meeting_processor:227] - Significant visual content found in frame at 10000ms.
+2025-05-01 19:44:34,447 - INFO - [meeting_processor:227] - Significant visual content found in frame at 20000ms.
+2025-05-01 19:44:34,988 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:44:34,990 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:44:34,990 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:44:35,005 - INFO - [streamlit_app:142] - Starting new summary generation for: video.mp4
+2025-05-01 19:44:35,011 - INFO - [streamlit_app:149] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmpkcl6mwjm.mp4
+2025-05-01 19:44:35,013 - INFO - [streamlit_app:157] - Output directory for this run: st_outputs\video_20250501_194435
+2025-05-01 19:44:35,067 - INFO - [streamlit_app:173] - Calling generate_summary_from_video function...
+2025-05-01 19:44:35,069 - INFO - [meeting_processor:477] - Starting enhanced multimodal summarization for: C:\Users\varun\AppData\Local\Temp\tmpkcl6mwjm.mp4
+2025-05-01 19:44:35,069 - INFO - [meeting_processor:478] - Output directory: st_outputs\video_20250501_194435
+2025-05-01 19:44:35,664 - INFO - [meeting_processor:65] - Groq and Gemini APIs configured successfully.
+2025-05-01 19:44:35,664 - INFO - [meeting_processor:73] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmpkcl6mwjm.mp4' to 'st_outputs\video_20250501_194435\temp_meeting_audio.mp3'...
+2025-05-01 19:44:36,974 - INFO - [meeting_processor:227] - Significant visual content found in frame at 30000ms.
+2025-05-01 19:44:39,333 - INFO - [meeting_processor:227] - Significant visual content found in frame at 40000ms.
+2025-05-01 19:44:40,563 - INFO - [meeting_processor:82] - Audio extraction successful.
+2025-05-01 19:44:40,563 - INFO - [meeting_processor:93] - Transcribing audio file: st_outputs\video_20250501_194435\temp_meeting_audio.mp3 using Groq/Whisper...
+2025-05-01 19:44:41,513 - INFO - [meeting_processor:227] - Significant visual content found in frame at 50000ms.
+2025-05-01 19:44:42,249 - INFO - [meeting_processor:100] - Audio duration: 605.90 seconds
+2025-05-01 19:44:42,301 - INFO - [meeting_processor:103] - Split audio into 2 chunks of approximately 10 minutes.
+2025-05-01 19:44:42,302 - INFO - [meeting_processor:111] - Processing chunk 1/2...
+2025-05-01 19:44:43,769 - INFO - [meeting_processor:227] - Significant visual content found in frame at 60000ms.
+2025-05-01 19:44:45,882 - INFO - [meeting_processor:227] - Significant visual content found in frame at 70000ms.
+2025-05-01 19:44:48,020 - INFO - [meeting_processor:227] - Significant visual content found in frame at 80000ms.
+2025-05-01 19:44:49,984 - INFO - [meeting_processor:227] - Significant visual content found in frame at 90000ms.
+2025-05-01 19:44:50,260 - INFO - [_client:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 19:44:50,261 - INFO - [meeting_processor:129] - Successfully transcribed chunk 1.
+2025-05-01 19:44:50,292 - INFO - [meeting_processor:111] - Processing chunk 2/2...
+2025-05-01 19:44:51,876 - INFO - [meeting_processor:227] - Significant visual content found in frame at 100000ms.
+2025-05-01 19:44:53,852 - INFO - [meeting_processor:227] - Significant visual content found in frame at 110000ms.
+2025-05-01 19:58:50,278 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:58:50,279 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:58:50,279 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:58:58,254 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:58:58,255 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:58:58,255 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:58:59,690 - INFO - [streamlit_app:56] - --- Streamlit App Script Started ---
+2025-05-01 19:58:59,691 - INFO - [streamlit_app:65] - .env file found and loaded.
+2025-05-01 19:58:59,691 - INFO - [streamlit_app:69] - GROQ and GOOGLE API keys found in environment.
+2025-05-01 19:58:59,711 - INFO - [streamlit_app:231] - Starting new summary generation for: video.mp4
+2025-05-01 19:58:59,712 - INFO - [streamlit_app:247] - Calling process_video_step_by_step generator...
+2025-05-01 19:58:59,713 - ERROR - [streamlit_app:288] - An exception occurred during process_video_step_by_step execution:
+2025-05-01 19:58:59,719 - ERROR - [streamlit_app:289] - Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\streamlit_app.py", line 250, in <module>
+    for result in process_video_step_by_step(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'process_video_step_by_step' is not defined
+
+2025-05-01 20:03:49,327 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 18476) ---
+2025-05-01 20:03:50,204 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:03:50,205 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:03:50,205 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:03:58,225 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 18476) ---
+2025-05-01 20:03:58,226 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:03:58,228 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:03:58,228 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:04:00,595 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 18476) ---
+2025-05-01 20:04:00,595 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:04:00,596 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:04:00,596 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:04:00,679 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 18476) ---
+2025-05-01 20:04:00,679 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:04:00,680 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:04:00,681 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:04:00,695 - INFO - [__main__:174] - Starting summary generation process for: video.mp4
+2025-05-01 20:04:00,710 - INFO - [__main__:184] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmpw8jszp77.mp4
+2025-05-01 20:04:00,713 - INFO - [__main__:191] - Output directory for this run: st_outputs\video_20250501_200400
+2025-05-01 20:04:00,714 - INFO - [__main__:212] - Calling process_video_step_by_step generator...
+2025-05-01 20:04:00,715 - INFO - [meeting_processor:244] - PROGRESS: Initializing: Preparing output directory... (0%)
+2025-05-01 20:04:00,715 - INFO - [__main__:232] - Generator yielded status: Initializing: Preparing output directory... (0%)
+2025-05-01 20:04:00,717 - INFO - [meeting_processor:267] - Starting multimodal summarization. Output target: st_outputs\video_20250501_200400\tmpw8jszp77_summary_with_images.md
+2025-05-01 20:04:00,717 - INFO - [meeting_processor:244] - PROGRESS: Initializing: Configuring APIs... (9%)
+2025-05-01 20:04:00,717 - INFO - [__main__:232] - Generator yielded status: Initializing: Configuring APIs... (9%)
+2025-05-01 20:04:01,419 - INFO - [meeting_processor:77] - Groq and Gemini APIs configured successfully.
+2025-05-01 20:04:01,419 - INFO - [meeting_processor:244] - PROGRESS: Processing: Extracting audio... (18%)
+2025-05-01 20:04:01,419 - INFO - [__main__:232] - Generator yielded status: Processing: Extracting audio... (18%)
+2025-05-01 20:04:01,421 - INFO - [meeting_processor:86] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmpw8jszp77.mp4' to 'st_outputs\video_20250501_200400\temp_meeting_audio.mp3'...
+2025-05-01 20:04:07,202 - INFO - [meeting_processor:100] - Audio extraction successful.
+2025-05-01 20:04:07,202 - INFO - [meeting_processor:244] - PROGRESS: Processing: Starting audio transcription... (27%)
+2025-05-01 20:04:07,202 - INFO - [__main__:232] - Generator yielded status: Processing: Starting audio transcription... (27%)
+2025-05-01 20:04:07,203 - INFO - [meeting_processor:119] - Transcribing audio file: st_outputs\video_20250501_200400\temp_meeting_audio.mp3 (chunk length: 10 min)
+2025-05-01 20:04:08,825 - INFO - [meeting_processor:130] - Audio duration: 605.90 seconds
+2025-05-01 20:04:08,860 - INFO - [meeting_processor:138] - Split audio into 2 chunks.
+2025-05-01 20:04:08,860 - INFO - [meeting_processor:148] - Processing chunk 1/2...
+2025-05-01 20:04:19,981 - INFO - [httpx:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 20:04:19,983 - INFO - [meeting_processor:173] - Successfully transcribed chunk 1.
+2025-05-01 20:04:20,020 - INFO - [meeting_processor:148] - Processing chunk 2/2...
+2025-05-01 20:04:20,602 - INFO - [httpx:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 20:04:20,603 - INFO - [meeting_processor:173] - Successfully transcribed chunk 2.
+2025-05-01 20:04:20,640 - INFO - [meeting_processor:204] - Finished processing all audio chunks.
+2025-05-01 20:04:20,666 - INFO - [meeting_processor:244] - PROGRESS: Processing: Audio transcription complete. (36%)
+2025-05-01 20:04:20,666 - INFO - [__main__:232] - Generator yielded status: Processing: Audio transcription complete. (36%)
+2025-05-01 20:04:20,667 - INFO - [meeting_processor:294] - Transcription complete. Length: 7570 chars.
+2025-05-01 20:04:20,708 - INFO - [meeting_processor:244] - PROGRESS: Processing: Extracting initial frames... (45%)
+2025-05-01 20:04:20,708 - INFO - [__main__:232] - Generator yielded status: Processing: Extracting initial frames... (45%)
+2025-05-01 20:04:20,709 - ERROR - [__main__:244] - An exception occurred during process_video_step_by_step execution:
+Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\streamlit_app.py", line 217, in <module>
+    for result in process_video_step_by_step(
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\backend\meeting_processor.py", line 306, in process_video_step_by_step
+    initial_frames = extract_frames_for_initial_scan(video_path, frame_interval)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'extract_frames_for_initial_scan' is not defined
+2025-05-01 20:04:20,720 - INFO - [__main__:254] - Removed temporary video file: C:\Users\varun\AppData\Local\Temp\tmpw8jszp77.mp4
+2025-05-01 20:04:20,783 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 18476) ---
+2025-05-01 20:04:20,784 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:04:20,785 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:04:20,785 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:04:20,795 - WARNING - [__main__:319] - Displayed error message to user: Processing Error: name 'extract_frames_for_initial_scan' is not defined
+2025-05-01 20:13:56,565 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 20:14:04,581 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 20:14:04,581 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:14:04,582 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:14:04,582 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:14:06,169 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 20:14:06,169 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:14:06,170 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:14:06,170 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:14:06,242 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 20:14:06,242 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:14:06,243 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:14:06,243 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:14:06,256 - INFO - [__main__:174] - Starting summary generation process for: video.mp4
+2025-05-01 20:14:06,266 - INFO - [__main__:184] - Uploaded file saved temporarily to: C:\Users\varun\AppData\Local\Temp\tmp1ow8ck31.mp4
+2025-05-01 20:14:06,268 - INFO - [__main__:191] - Output directory for this run: st_outputs\video_20250501_201406
+2025-05-01 20:14:06,269 - INFO - [__main__:212] - Calling process_video_step_by_step generator...
+2025-05-01 20:14:06,270 - INFO - [meeting_processor:699] - PROGRESS (0%): Initializing: Preparing output directory...
+2025-05-01 20:14:06,270 - INFO - [__main__:232] - Generator yielded status: Initializing: Preparing output directory... (0%)
+2025-05-01 20:14:06,272 - INFO - [meeting_processor:723] - Starting multimodal summarization. Output target: st_outputs\video_20250501_201406\tmp1ow8ck31_summary_with_images.md
+2025-05-01 20:14:06,272 - INFO - [meeting_processor:699] - PROGRESS (9%): Initializing: Configuring APIs...
+2025-05-01 20:14:06,272 - INFO - [__main__:232] - Generator yielded status: Initializing: Configuring APIs... (9%)
+2025-05-01 20:14:06,965 - INFO - [meeting_processor:100] - Groq and Gemini APIs configured successfully.
+2025-05-01 20:14:06,965 - INFO - [meeting_processor:699] - PROGRESS (18%): Processing: Extracting audio...
+2025-05-01 20:14:06,965 - INFO - [__main__:232] - Generator yielded status: Processing: Extracting audio... (18%)
+2025-05-01 20:14:06,966 - INFO - [meeting_processor:108] - Extracting audio from 'C:\Users\varun\AppData\Local\Temp\tmp1ow8ck31.mp4' to 'st_outputs\video_20250501_201406\temp_meeting_audio.mp3'...
+2025-05-01 20:14:11,785 - INFO - [meeting_processor:122] - Audio extraction successful.
+2025-05-01 20:14:11,785 - INFO - [meeting_processor:699] - PROGRESS (27%): Processing: Starting audio transcription...
+2025-05-01 20:14:11,785 - INFO - [__main__:232] - Generator yielded status: Processing: Starting audio transcription... (27%)
+2025-05-01 20:14:11,786 - INFO - [meeting_processor:140] - Transcribing audio file: st_outputs\video_20250501_201406\temp_meeting_audio.mp3 (chunk length: 10 min)
+2025-05-01 20:14:13,631 - INFO - [meeting_processor:151] - Audio duration: 605.90 seconds
+2025-05-01 20:14:13,670 - INFO - [meeting_processor:159] - Split audio into 2 chunks.
+2025-05-01 20:14:13,670 - INFO - [meeting_processor:169] - Processing chunk 1/2...
+2025-05-01 20:14:24,159 - INFO - [httpx:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 20:14:24,160 - INFO - [meeting_processor:194] - Successfully transcribed chunk 1.
+2025-05-01 20:14:24,192 - INFO - [meeting_processor:169] - Processing chunk 2/2...
+2025-05-01 20:14:24,844 - INFO - [httpx:1025] - HTTP Request: POST https://api.groq.com/openai/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-05-01 20:14:24,845 - INFO - [meeting_processor:194] - Successfully transcribed chunk 2.
+2025-05-01 20:14:24,877 - INFO - [meeting_processor:225] - Finished processing all audio chunks.
+2025-05-01 20:14:24,894 - INFO - [meeting_processor:699] - PROGRESS (36%): Processing: Audio transcription complete.
+2025-05-01 20:14:24,894 - INFO - [__main__:232] - Generator yielded status: Processing: Audio transcription complete. (36%)
+2025-05-01 20:14:24,895 - INFO - [meeting_processor:759] - Transcription complete. Length: 7569 chars.
+2025-05-01 20:14:24,929 - INFO - [meeting_processor:699] - PROGRESS (45%): Processing: Extracting initial frames...
+2025-05-01 20:14:24,930 - INFO - [__main__:232] - Generator yielded status: Processing: Extracting initial frames... (45%)
+2025-05-01 20:14:24,931 - INFO - [meeting_processor:241] - Extracting frames for initial scan from 'C:\Users\varun\AppData\Local\Temp\tmp1ow8ck31.mp4' every 10 seconds...
+2025-05-01 20:14:28,124 - INFO - [meeting_processor:267] - End of video reached or cannot read frame.
+2025-05-01 20:14:28,124 - INFO - [meeting_processor:288] - Finished initial frame scan. Extracted 61 frames.
+2025-05-01 20:14:28,131 - INFO - [meeting_processor:699] - PROGRESS (55%): Processing: Analyzing 61 initial frames...
+2025-05-01 20:14:28,131 - INFO - [__main__:232] - Generator yielded status: Processing: Analyzing 61 initial frames... (55%)
+2025-05-01 20:14:28,132 - INFO - [meeting_processor:309] - Analyzing 61 initially scanned frames...
+2025-05-01 20:14:30,240 - INFO - [meeting_processor:366] - Significant visual content found in frame 1/61 at 0ms.
+2025-05-01 20:14:32,254 - INFO - [meeting_processor:366] - Significant visual content found in frame 2/61 at 10000ms.
+2025-05-01 20:14:34,322 - INFO - [meeting_processor:366] - Significant visual content found in frame 3/61 at 20000ms.
+2025-05-01 20:14:36,616 - INFO - [meeting_processor:366] - Significant visual content found in frame 4/61 at 30000ms.
+2025-05-01 20:14:38,821 - INFO - [meeting_processor:366] - Significant visual content found in frame 5/61 at 40000ms.
+2025-05-01 20:14:40,870 - INFO - [meeting_processor:366] - Significant visual content found in frame 6/61 at 50000ms.
+2025-05-01 20:14:42,841 - INFO - [meeting_processor:366] - Significant visual content found in frame 7/61 at 60000ms.
+2025-05-01 20:14:44,754 - INFO - [meeting_processor:366] - Significant visual content found in frame 8/61 at 70000ms.
+2025-05-01 20:14:47,058 - INFO - [meeting_processor:366] - Significant visual content found in frame 9/61 at 80000ms.
+2025-05-01 20:14:48,933 - INFO - [meeting_processor:366] - Significant visual content found in frame 10/61 at 90000ms.
+2025-05-01 20:14:50,573 - INFO - [meeting_processor:366] - Significant visual content found in frame 11/61 at 100000ms.
+2025-05-01 20:14:52,415 - INFO - [meeting_processor:366] - Significant visual content found in frame 12/61 at 110000ms.
+2025-05-01 20:14:54,231 - INFO - [meeting_processor:366] - Significant visual content found in frame 13/61 at 120000ms.
+2025-05-01 20:14:56,245 - INFO - [meeting_processor:366] - Significant visual content found in frame 14/61 at 130000ms.
+2025-05-01 20:14:58,430 - INFO - [meeting_processor:366] - Significant visual content found in frame 15/61 at 140000ms.
+2025-05-01 20:15:00,230 - INFO - [meeting_processor:366] - Significant visual content found in frame 16/61 at 150000ms.
+2025-05-01 20:15:01,112 - WARNING - [meeting_processor:376] - Error analyzing frame 17/61 at 160000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 58
+}
+]
+2025-05-01 20:15:01,112 - INFO - [meeting_processor:385] - Retrying frame 17/61 at 160000ms in 5 seconds...
+2025-05-01 20:15:07,718 - INFO - [meeting_processor:366] - Significant visual content found in frame 17/61 at 160000ms.
+2025-05-01 20:15:08,607 - WARNING - [meeting_processor:376] - Error analyzing frame 18/61 at 170000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 51
+}
+]
+2025-05-01 20:15:08,607 - INFO - [meeting_processor:385] - Retrying frame 18/61 at 170000ms in 5 seconds...
+2025-05-01 20:15:14,315 - WARNING - [meeting_processor:376] - Error analyzing frame 18/61 at 170000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 45
+}
+]
+2025-05-01 20:15:14,315 - INFO - [meeting_processor:385] - Retrying frame 18/61 at 170000ms in 5 seconds...
+2025-05-01 20:15:19,986 - WARNING - [meeting_processor:376] - Error analyzing frame 18/61 at 170000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-05-01 20:15:19,986 - ERROR - [meeting_processor:379] - Frame analysis failed permanently for frame 18/61 at 170000ms.
+Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\backend\meeting_processor.py", line 342, in analyze_initial_frames
+    response = gemini_vision_model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 39
+}
+]
+2025-05-01 20:15:20,848 - WARNING - [meeting_processor:376] - Error analyzing frame 19/61 at 180000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-05-01 20:15:20,848 - INFO - [meeting_processor:385] - Retrying frame 19/61 at 180000ms in 5 seconds...
+2025-05-01 20:15:26,488 - WARNING - [meeting_processor:376] - Error analyzing frame 19/61 at 180000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-05-01 20:15:26,488 - INFO - [meeting_processor:385] - Retrying frame 19/61 at 180000ms in 5 seconds...
+2025-05-01 20:15:33,180 - INFO - [meeting_processor:366] - Significant visual content found in frame 19/61 at 180000ms.
+2025-05-01 20:15:35,013 - INFO - [meeting_processor:366] - Significant visual content found in frame 20/61 at 190000ms.
+2025-05-01 20:15:36,836 - INFO - [meeting_processor:366] - Significant visual content found in frame 21/61 at 200000ms.
+2025-05-01 20:15:38,768 - INFO - [meeting_processor:366] - Significant visual content found in frame 22/61 at 210000ms.
+2025-05-01 20:15:40,590 - INFO - [meeting_processor:366] - Significant visual content found in frame 23/61 at 220000ms.
+2025-05-01 20:15:42,679 - INFO - [meeting_processor:366] - Significant visual content found in frame 24/61 at 230000ms.
+2025-05-01 20:15:44,821 - INFO - [meeting_processor:366] - Significant visual content found in frame 25/61 at 240000ms.
+2025-05-01 20:15:46,749 - INFO - [meeting_processor:366] - Significant visual content found in frame 26/61 at 250000ms.
+2025-05-01 20:15:49,068 - INFO - [meeting_processor:366] - Significant visual content found in frame 27/61 at 260000ms.
+2025-05-01 20:15:51,693 - INFO - [meeting_processor:366] - Significant visual content found in frame 28/61 at 270000ms.
+2025-05-01 20:15:53,444 - INFO - [meeting_processor:366] - Significant visual content found in frame 29/61 at 280000ms.
+2025-05-01 20:15:55,473 - INFO - [meeting_processor:366] - Significant visual content found in frame 30/61 at 290000ms.
+2025-05-01 20:15:57,833 - INFO - [meeting_processor:366] - Significant visual content found in frame 31/61 at 300000ms.
+2025-05-01 20:16:00,251 - INFO - [meeting_processor:366] - Significant visual content found in frame 32/61 at 310000ms.
+2025-05-01 20:16:02,389 - INFO - [meeting_processor:366] - Significant visual content found in frame 33/61 at 320000ms.
+2025-05-01 20:16:04,545 - INFO - [meeting_processor:366] - Significant visual content found in frame 34/61 at 330000ms.
+2025-05-01 20:16:06,280 - INFO - [meeting_processor:366] - Significant visual content found in frame 35/61 at 340000ms.
+2025-05-01 20:16:07,143 - WARNING - [meeting_processor:376] - Error analyzing frame 36/61 at 350000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 52
+}
+]
+2025-05-01 20:16:07,143 - INFO - [meeting_processor:385] - Retrying frame 36/61 at 350000ms in 5 seconds...
+2025-05-01 20:16:12,782 - WARNING - [meeting_processor:376] - Error analyzing frame 36/61 at 350000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 46
+}
+]
+2025-05-01 20:16:12,782 - INFO - [meeting_processor:385] - Retrying frame 36/61 at 350000ms in 5 seconds...
+2025-05-01 20:16:18,437 - WARNING - [meeting_processor:376] - Error analyzing frame 36/61 at 350000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-05-01 20:16:18,437 - ERROR - [meeting_processor:379] - Frame analysis failed permanently for frame 36/61 at 350000ms.
+Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\backend\meeting_processor.py", line 342, in analyze_initial_frames
+    response = gemini_vision_model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 41
+}
+]
+2025-05-01 20:16:19,327 - WARNING - [meeting_processor:376] - Error analyzing frame 37/61 at 360000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 40
+}
+]
+2025-05-01 20:16:19,328 - INFO - [meeting_processor:385] - Retrying frame 37/61 at 360000ms in 5 seconds...
+2025-05-01 20:16:24,988 - WARNING - [meeting_processor:376] - Error analyzing frame 37/61 at 360000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 34
+}
+]
+2025-05-01 20:16:24,988 - INFO - [meeting_processor:385] - Retrying frame 37/61 at 360000ms in 5 seconds...
+2025-05-01 20:16:32,017 - INFO - [meeting_processor:366] - Significant visual content found in frame 37/61 at 360000ms.
+2025-05-01 20:16:34,317 - INFO - [meeting_processor:366] - Significant visual content found in frame 38/61 at 370000ms.
+2025-05-01 20:16:36,030 - INFO - [meeting_processor:366] - Significant visual content found in frame 39/61 at 380000ms.
+2025-05-01 20:16:37,933 - INFO - [meeting_processor:366] - Significant visual content found in frame 40/61 at 390000ms.
+2025-05-01 20:16:40,130 - INFO - [meeting_processor:366] - Significant visual content found in frame 41/61 at 400000ms.
+2025-05-01 20:16:42,441 - INFO - [meeting_processor:366] - Significant visual content found in frame 42/61 at 410000ms.
+2025-05-01 20:16:44,299 - INFO - [meeting_processor:366] - Significant visual content found in frame 43/61 at 420000ms.
+2025-05-01 20:16:46,506 - INFO - [meeting_processor:366] - Significant visual content found in frame 44/61 at 430000ms.
+2025-05-01 20:16:48,708 - INFO - [meeting_processor:366] - Significant visual content found in frame 45/61 at 440000ms.
+2025-05-01 20:16:50,366 - INFO - [meeting_processor:366] - Significant visual content found in frame 46/61 at 450000ms.
+2025-05-01 20:16:52,257 - INFO - [meeting_processor:366] - Significant visual content found in frame 47/61 at 460000ms.
+2025-05-01 20:16:54,579 - INFO - [meeting_processor:366] - Significant visual content found in frame 48/61 at 470000ms.
+2025-05-01 20:16:56,670 - INFO - [meeting_processor:366] - Significant visual content found in frame 49/61 at 480000ms.
+2025-05-01 20:16:58,798 - INFO - [meeting_processor:366] - Significant visual content found in frame 50/61 at 490000ms.
+2025-05-01 20:17:00,661 - INFO - [meeting_processor:366] - Significant visual content found in frame 51/61 at 500000ms.
+2025-05-01 20:17:02,653 - INFO - [meeting_processor:366] - Significant visual content found in frame 52/61 at 510000ms.
+2025-05-01 20:17:04,383 - INFO - [meeting_processor:366] - Significant visual content found in frame 53/61 at 520000ms.
+2025-05-01 20:17:04,944 - WARNING - [meeting_processor:376] - Error analyzing frame 54/61 at 530000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-05-01 20:17:04,945 - INFO - [meeting_processor:385] - Retrying frame 54/61 at 530000ms in 5 seconds...
+2025-05-01 20:17:10,338 - WARNING - [meeting_processor:376] - Error analyzing frame 54/61 at 530000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-05-01 20:17:10,338 - INFO - [meeting_processor:385] - Retrying frame 54/61 at 530000ms in 5 seconds...
+2025-05-01 20:17:15,708 - WARNING - [meeting_processor:376] - Error analyzing frame 54/61 at 530000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-05-01 20:17:15,708 - ERROR - [meeting_processor:379] - Frame analysis failed permanently for frame 54/61 at 530000ms.
+Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\backend\meeting_processor.py", line 342, in analyze_initial_frames
+    response = gemini_vision_model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 44
+}
+]
+2025-05-01 20:17:16,317 - WARNING - [meeting_processor:376] - Error analyzing frame 55/61 at 540000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-05-01 20:17:16,317 - INFO - [meeting_processor:385] - Retrying frame 55/61 at 540000ms in 5 seconds...
+2025-05-01 20:17:21,732 - WARNING - [meeting_processor:376] - Error analyzing frame 55/61 at 540000ms (attempt 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 37
+}
+]
+2025-05-01 20:17:21,732 - INFO - [meeting_processor:385] - Retrying frame 55/61 at 540000ms in 5 seconds...
+2025-05-01 20:17:27,122 - WARNING - [meeting_processor:376] - Error analyzing frame 55/61 at 540000ms (attempt 3/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-05-01 20:17:27,122 - ERROR - [meeting_processor:379] - Frame analysis failed permanently for frame 55/61 at 540000ms.
+Traceback (most recent call last):
+  File "C:\Users\varun\Downloads\meeting-summeriser-main\meeting-summeriser-main\meeting-summarizer\backend\meeting_processor.py", line 342, in analyze_initial_frames
+    response = gemini_vision_model.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+               ^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 293, in retry_wrapped_func
+    return retry_target(
+           ^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 153, in retry_target
+    _retry_error_helper(
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_base.py", line 212, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\retry\retry_unary.py", line 144, in retry_target
+    result = target()
+             ^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\varun\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-05-01 20:17:27,704 - WARNING - [meeting_processor:376] - Error analyzing frame 56/61 at 550000ms (attempt 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 32
+}
+]
+2025-05-01 20:17:27,705 - INFO - [meeting_processor:385] - Retrying frame 56/61 at 550000ms in 5 seconds...
+2025-05-01 20:17:34,134 - INFO - [meeting_processor:366] - Significant visual content found in frame 56/61 at 550000ms.
+2025-05-01 20:17:35,762 - INFO - [meeting_processor:366] - Significant visual content found in frame 57/61 at 560000ms.
+2025-05-01 20:17:37,085 - INFO - [meeting_processor:366] - Significant visual content found in frame 58/61 at 570000ms.
+2025-05-01 20:17:38,747 - INFO - [meeting_processor:366] - Significant visual content found in frame 59/61 at 580000ms.
+2025-05-01 20:17:40,333 - INFO - [meeting_processor:366] - Significant visual content found in frame 60/61 at 590000ms.
+2025-05-01 20:17:41,722 - INFO - [meeting_processor:366] - Significant visual content found in frame 61/61 at 600000ms.
+2025-05-01 20:17:41,923 - INFO - [meeting_processor:395] - Finished initial frame analysis. Got 61 descriptions.
+2025-05-01 20:17:41,923 - INFO - [meeting_processor:783] - Initial frame analysis complete. Found 61 descriptions.
+2025-05-01 20:17:41,923 - INFO - [meeting_processor:699] - PROGRESS (64%): Processing: Initial frame analysis complete.
+2025-05-01 20:17:41,923 - INFO - [__main__:232] - Generator yielded status: Processing: Initial frame analysis complete. (64%)
+2025-05-01 20:17:41,924 - INFO - [meeting_processor:699] - PROGRESS (73%): Processing: Generating summary draft...
+2025-05-01 20:17:41,924 - INFO - [__main__:232] - Generator yielded status: Processing: Generating summary draft... (73%)
+2025-05-01 20:17:41,925 - INFO - [meeting_processor:401] - Generating initial summary and requesting image placeholders...
+2025-05-01 20:17:47,054 - INFO - [meeting_processor:468] - Initial summary generation successful.
+2025-05-01 20:17:47,054 - INFO - [meeting_processor:807] - Summary draft generated successfully.
+2025-05-01 20:17:47,054 - INFO - [meeting_processor:699] - PROGRESS (82%): Processing: Identifying key visuals requested...
+2025-05-01 20:17:47,054 - INFO - [__main__:232] - Generator yielded status: Processing: Identifying key visuals requested... (82%)
+2025-05-01 20:17:47,055 - INFO - [meeting_processor:509] - Found placeholder: @@IMG_300@@ requesting frame at 300000ms
+2025-05-01 20:17:47,055 - INFO - [meeting_processor:509] - Found placeholder: @@IMG_550@@ requesting frame at 550000ms
+2025-05-01 20:17:47,055 - INFO - [meeting_processor:517] - Parsed 2 unique placeholders.
+2025-05-01 20:17:47,055 - INFO - [meeting_processor:699] - PROGRESS (91%): Processing: Extracting & encoding 2 key frames...
+2025-05-01 20:17:47,055 - INFO - [__main__:232] - Generator yielded status: Processing: Extracting & encoding 2 key frames... (91%)
+2025-05-01 20:17:47,056 - INFO - [meeting_processor:543] - Attempting to extract 2 specific frames into 'st_outputs\video_20250501_201406\important_frames'...
+2025-05-01 20:17:47,151 - INFO - [meeting_processor:577] - Successfully extracted frame for requested 300000ms (actual 300000ms) to st_outputs\video_20250501_201406\important_frames\frame_at_300000ms.jpg
+2025-05-01 20:17:47,223 - INFO - [meeting_processor:577] - Successfully extracted frame for requested 550000ms (actual 550000ms) to st_outputs\video_20250501_201406\important_frames\frame_at_550000ms.jpg
+2025-05-01 20:17:47,239 - INFO - [meeting_processor:597] - Finished specific frame extraction. Successfully extracted 2/2 requested frames.
+2025-05-01 20:17:47,239 - INFO - [meeting_processor:608] - Encoding 2 extracted frames to Base64...
+2025-05-01 20:17:47,241 - INFO - [meeting_processor:627] - Finished encoding frames. 2 frames successfully encoded.
+2025-05-01 20:17:47,242 - INFO - [meeting_processor:827] - Extracted and encoded 2 key frames.
+2025-05-01 20:17:47,242 - INFO - [meeting_processor:637] - Replacing placeholders with embedded images in the final summary...
+2025-05-01 20:17:47,242 - INFO - [meeting_processor:665] - Placeholder replacement complete. Embedded: 2, Missed: 0.
+2025-05-01 20:17:47,242 - INFO - [meeting_processor:699] - PROGRESS (100%): Finalizing: Saving summary...
+2025-05-01 20:17:47,242 - INFO - [__main__:232] - Generator yielded status: Finalizing: Saving summary... (100%)
+2025-05-01 20:17:47,248 - INFO - [meeting_processor:859] - Final summary saved successfully to st_outputs\video_20250501_201406\tmp1ow8ck31_summary_with_images.md
+2025-05-01 20:17:47,248 - INFO - [__main__:227] - Generator yielded final path: st_outputs\video_20250501_201406\tmp1ow8ck31_summary_with_images.md
+2025-05-01 20:17:47,259 - INFO - [__main__:254] - Removed temporary video file: C:\Users\varun\AppData\Local\Temp\tmp1ow8ck31.mp4
+2025-05-01 20:17:47,259 - INFO - [__main__:264] - Attempting to read final summary file...
+2025-05-01 20:17:47,262 - INFO - [__main__:269] - Summary file read and processing marked complete.
+2025-05-01 20:17:47,362 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 20:17:47,363 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 20:17:47,364 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 20:17:47,365 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 20:17:47,388 - INFO - [__main__:313] - Summary displayed successfully in Streamlit app.
+2025-05-01 21:36:50,130 - INFO - [__main__:47] - --- Streamlit App Script Started (PID: 5484) ---
+2025-05-01 21:36:50,130 - INFO - [__main__:54] - Successfully imported backend module 'meeting_processor'.
+2025-05-01 21:36:50,131 - INFO - [__main__:73] - .env file found and processed.
+2025-05-01 21:36:50,132 - INFO - [__main__:77] - GROQ and GOOGLE API keys verified in environment.
+2025-05-01 21:36:50,157 - INFO - [__main__:313] - Summary displayed successfully in Streamlit app.
